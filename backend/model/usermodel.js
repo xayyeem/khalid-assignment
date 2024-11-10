@@ -4,7 +4,7 @@ const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        unique: true,
+        match: /^[A-Za-z\s]+$/
     },
     email: {
         type: String,
