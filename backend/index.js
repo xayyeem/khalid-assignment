@@ -4,8 +4,11 @@ const route = require('./route/route')
 const dbConnect = require('./config/database')
 const fileupload = require('express-fileupload')
 const cloudinary = require('./config/uploadfile')
+const cors = require('cors');
+
 
 const app = express()
+app.use(cors());
 
 const port = process.env.PORT
 
